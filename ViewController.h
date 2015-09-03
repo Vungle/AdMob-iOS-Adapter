@@ -11,8 +11,10 @@
 @interface ViewController : UIViewController
 
 @property(nonatomic, strong) IBOutlet UIButton *RBVVungleButton;
+@property(nonatomic, strong) IBOutlet UIButton *VungleInterstitialButton;
 @property(nonatomic, strong) IBOutlet UITextView *logView;
 
 - (IBAction)onRequestRBVFromVungle:(id)sender;
+- (IBAction)onRequestInterstitialFromVungle:(id)sender;
 
 @end
