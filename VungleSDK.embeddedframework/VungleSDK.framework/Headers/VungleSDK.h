@@ -17,7 +17,7 @@ extern NSString* VunglePlayAdOptionKeyIncentivizedAlertTitleText;
 extern NSString* VunglePlayAdOptionKeyIncentivizedAlertBodyText;
 extern NSString* VunglePlayAdOptionKeyIncentivizedAlertCloseButtonText;
 extern NSString* VunglePlayAdOptionKeyIncentivizedAlertContinueButtonText;
-extern NSString* VunglePlayAdOptionKeyShowClose __deprecated_msg("Set this option on the Vungle dashboard instead.");
+extern NSString * VunglePlayAdOptionKeyShowClose __deprecated_msg("Set this option on the Vungle dashboard instead.");
 extern NSString* VunglePlayAdOptionKeyOrientations;
 extern NSString* VunglePlayAdOptionKeyUser;
 extern NSString* VunglePlayAdOptionKeyPlacement;
@@ -97,6 +97,12 @@ typedef enum {
  * Returns the singleton instance.
  */
 + (VungleSDK *)sharedSDK;
+
+/**
+ * Setup the SDK with an asset loader. This must be called before any call to shareSDK in order
+ * to properly set the asset loader.
+ */
++ (VungleSDK *)setupSDKWithAssetLoader:(id<VungleAssetLoader>)loader;
 
 /**
  * Initializes the SDK. You can get your app id on Vungle's dashboard: https://v.vungle.com
