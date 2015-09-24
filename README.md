@@ -8,4 +8,4 @@ To get up and running with Vungle, you'll need to [Create an Account With Vungle
 * Initial version + iOS Publisher SDK v3.2.0
 
 ## License
-The Vungle Air Extension is available under a commercial license. See the LICENSE file for more info.
+The Vungle AdMob Adapter is available under a commercial license. See the LICENSE file for more info.
