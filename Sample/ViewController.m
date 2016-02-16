@@ -56,6 +56,7 @@ static NSString *const UnitIDInterstitial = @"ca-app-pub-1812018162342166/734126
 		[[GADRewardBasedVideoAd sharedInstance] loadRequest:[GADRequest request]
 											   withAdUnitID:UnitIDrewardBased
 													 userID:@"vungle_user"];
+        [self appendLog:@"Requesting reward based video ad..."];
 	}
 }
 
@@ -116,6 +117,7 @@ static NSString *const UnitIDInterstitial = @"ca-app-pub-1812018162342166/734126
 		//test ad from admob
 		//request.testDevices = @[kGADSimulatorID];
 		[self.interstitial loadRequest:request];
+        [self appendLog:@"Requesting interstitial ad..."];
 	}
 }
 
