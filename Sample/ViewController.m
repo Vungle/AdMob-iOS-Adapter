@@ -8,6 +8,8 @@
 
 @import GoogleMobileAds;
 
+#import <VungleSDK/VungleSDK.h>
+
 #import "ViewController.h"
 
 static NSString *const kRequestMessage = @"Request RewardBased ad from vungle.";
@@ -29,7 +31,11 @@ static NSString *const UnitIDInterstitial = @"ca-app-pub-1812018162342166/734126
 @implementation ViewController
 
 - (void)viewDidLoad {
-  [GADRewardBasedVideoAd sharedInstance].delegate = self;
+    NSString *appVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+    [self appendLog:[NSString stringWithFormat:@"App version: %@", appVersion]];
+    [self appendLog:[NSString stringWithFormat:@"AdMob SDK: %@", [GADRequest sdkVersion]]];
+    [self appendLog:[NSString stringWithFormat:@"Vungle SDK: %@", VungleSDKVersion]];
+    [GADRewardBasedVideoAd sharedInstance].delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
