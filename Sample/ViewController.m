@@ -60,8 +60,7 @@ static NSString *const UnitIDInterstitial = @"ca-app-pub-1812018162342166/734126
 	} else {
 		[self resetRequest];
 		[[GADRewardBasedVideoAd sharedInstance] loadRequest:[GADRequest request]
-											   withAdUnitID:UnitIDrewardBased
-													 userID:@"vungle_user"];
+											   withAdUnitID:UnitIDrewardBased];
         [self appendLog:@"Requesting reward based video ad..."];
 	}
 }
