@@ -238,7 +238,7 @@
 		C80D05721A896BB000930EF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Google;
 				TargetAttributes = {
 					C80D05791A896BB000930EF6 = {
@@ -337,6 +337,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
@@ -416,6 +417,7 @@
 					"$(PROJECT_DIR)/Libraries/VungleAdapter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vungle.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Publisher Test Ads";
 			};
 			name = Debug;
@@ -437,6 +439,7 @@
 					"$(PROJECT_DIR)/Libraries/VungleAdapter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vungle.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Publisher Test Ads";
 			};
 			name = Release;
