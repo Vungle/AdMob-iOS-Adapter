@@ -33,6 +33,7 @@ static NSString *const UnitIDInterstitial = @"ca-app-pub-1812018162342166/734126
 @implementation ViewController
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
     NSString *appVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     [self appendLog:[NSString stringWithFormat:@"App version: %@", appVersion]];
     [self appendLog:[NSString stringWithFormat:@"Reward based adapter: %@", [self versionOfAdapter:@"GADMAdapterVungleRewardBasedVideoAd"]]];
