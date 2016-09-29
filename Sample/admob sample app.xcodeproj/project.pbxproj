@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		842EB7391B7B595E007B3A6E /* libVungleAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842EB7381B7B595E007B3A6E /* libVungleAdapter.a */; };
 		842EB7441B7B5976007B3A6E /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842EB73B1B7B5976007B3A6E /* GoogleMobileAds.framework */; };
-		842EB7451B7B5976007B3A6E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 842EB7421B7B5976007B3A6E /* README.txt */; };
-		842EB7461B7B5976007B3A6E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 842EB7431B7B5976007B3A6E /* README.txt */; };
 		842EB7501B7B5981007B3A6E /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = 842EB7491B7B5981007B3A6E /* __vungle.db */; };
 		842EB7511B7B5981007B3A6E /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 842EB74A1B7B5981007B3A6E /* vg_close.png */; };
 		842EB7521B7B5981007B3A6E /* vg_cta.png in Resources */ = {isa = PBXBuildFile; fileRef = 842EB74B1B7B5981007B3A6E /* vg_cta.png */; };
@@ -20,7 +18,6 @@
 		842EB7561B7B5981007B3A6E /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842EB74F1B7B5981007B3A6E /* VungleSDK.framework */; };
 		843F3DD51B74ECF3007FF079 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F3DD21B74ECF3007FF079 /* AppDelegate.m */; };
 		843F3DD61B74ECF3007FF079 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F3DD41B74ECF3007FF079 /* ViewController.m */; };
-		843F3DD91B74ED04007FF079 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 843F3DD71B74ED04007FF079 /* Info.plist */; };
 		843F3DDA1B74ED04007FF079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F3DD81B74ED04007FF079 /* main.m */; };
 		843F3DE51B74ED4E007FF079 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843F3DE41B74ED4E007FF079 /* Images.xcassets */; };
 		843F3DE61B74ED8E007FF079 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843F3DDB1B74ED2A007FF079 /* LaunchScreen.xib */; };
@@ -35,7 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		842EB7381B7B595E007B3A6E /* libVungleAdapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVungleAdapter.a; path = Libraries/libVungleAdapter.a; sourceTree = "<group>"; };
+		842EB7381B7B595E007B3A6E /* libVungleAdapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVungleAdapter.a; sourceTree = "<group>"; };
 		842EB73B1B7B5976007B3A6E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		842EB73D1B7B5976007B3A6E /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
 		842EB73E1B7B5976007B3A6E /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
@@ -60,6 +57,7 @@
 		843F3DDC1B74ED2A007FF079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
 		843F3DE21B74ED42007FF079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		843F3DE41B74ED4E007FF079 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
+		C30091B01D9D8B4500FA08D2 /* VungleAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleAdNetworkExtras.h; sourceTree = "<group>"; };
 		C806F5B21A8C3D9E00CAE55B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		C806F5B41A8C3DBB00CAE55B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C80D057A1A896BB000930EF6 /* Publisher Test Ads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Publisher Test Ads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +136,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C30091AF1D9D8B0000FA08D2 /* VungleAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				C30091B01D9D8B4500FA08D2 /* VungleAdNetworkExtras.h */,
+				842EB7381B7B595E007B3A6E /* libVungleAdapter.a */,
+			);
+			name = VungleAdapter;
+			path = Libraries/VungleAdapter;
+			sourceTree = "<group>";
+		};
 		C80D05711A896BB000930EF6 = {
 			isa = PBXGroup;
 			children = (
@@ -190,9 +198,9 @@
 		C881C71B1B0556F500D71DDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C30091AF1D9D8B0000FA08D2 /* VungleAdapter */,
 				842EB7471B7B5981007B3A6E /* VungleSDK */,
 				842EB73A1B7B5976007B3A6E /* GoogleMobileAdsSdkiOS */,
-				842EB7381B7B595E007B3A6E /* libVungleAdapter.a */,
 				C881C71E1B05573F00D71DDD /* Social.framework */,
 				C881C71C1B05572A00D71DDD /* WebKit.framework */,
 				C806F5B41A8C3DBB00CAE55B /* libz.dylib */,
@@ -230,7 +238,7 @@
 		C80D05721A896BB000930EF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Google;
 				TargetAttributes = {
 					C80D05791A896BB000930EF6 = {
@@ -268,11 +276,8 @@
 				842EB7531B7B5981007B3A6E /* vg_mute_off.png in Resources */,
 				842EB7521B7B5981007B3A6E /* vg_cta.png in Resources */,
 				843F3DE61B74ED8E007FF079 /* LaunchScreen.xib in Resources */,
-				843F3DD91B74ED04007FF079 /* Info.plist in Resources */,
 				843F3DE51B74ED4E007FF079 /* Images.xcassets in Resources */,
-				842EB7461B7B5976007B3A6E /* README.txt in Resources */,
 				842EB7541B7B5981007B3A6E /* vg_mute_on.png in Resources */,
-				842EB7451B7B5976007B3A6E /* README.txt in Resources */,
 				842EB7551B7B5981007B3A6E /* vg_privacy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +337,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
@@ -398,15 +404,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/../Libraries/VungleSDK.embeddedframework",
-					"$(PROJECT_DIR)/../Libraries/GoogleMobileAdsSdkiOS",
-					/Users/admin/Documents/work/admob,
-					sample,
-					app/Libraries/VungleSDK.embeddedframework,
 					"$(PROJECT_DIR)/Libraries/GoogleMobileAdsSdkiOS",
 					"$(PROJECT_DIR)/Libraries/VungleSDK.embeddedframework",
 				);
@@ -414,16 +414,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/admin/Documents/work/VungleRewardBasedVideo/VungleAdapter/build/Debug-iphoneos",
-					/Users/admin/Documents/work/VungleRewardBasedVideo/Libraries,
-					/Users/admin/Documents/work/admob,
-					sample,
-					app/Libraries,
-					"$(PROJECT_DIR)/Libraries",
+					"$(PROJECT_DIR)/Libraries/VungleAdapter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vungle.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Publisher Test Ads";
-				PROVISIONING_PROFILE = "9bad1461-8965-4153-b06a-d00a6047230f";
 			};
 			name = Debug;
 		};
@@ -431,15 +426,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Vungle, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/../Libraries/VungleSDK.embeddedframework",
-					"$(PROJECT_DIR)/../Libraries/GoogleMobileAdsSdkiOS",
-					/Users/admin/Documents/work/admob,
-					sample,
-					app/Libraries/VungleSDK.embeddedframework,
 					"$(PROJECT_DIR)/Libraries/GoogleMobileAdsSdkiOS",
 					"$(PROJECT_DIR)/Libraries/VungleSDK.embeddedframework",
 				);
@@ -447,16 +436,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/admin/Documents/work/VungleRewardBasedVideo/VungleAdapter/build/Debug-iphoneos",
-					/Users/admin/Documents/work/VungleRewardBasedVideo/Libraries,
-					/Users/admin/Documents/work/admob,
-					sample,
-					app/Libraries,
-					"$(PROJECT_DIR)/Libraries",
+					"$(PROJECT_DIR)/Libraries/VungleAdapter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vungle.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Publisher Test Ads";
-				PROVISIONING_PROFILE = "9bad1461-8965-4153-b06a-d00a6047230f";
 			};
 			name = Release;
 		};
