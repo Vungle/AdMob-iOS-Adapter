@@ -13,6 +13,7 @@
 #import "VungleAdNetworkExtras.h"
 
 #import "ViewController.h"
+#import "OptionsViewController.h"
 
 static NSString *const kRequestMessage = @"Request RewardBased ad from vungle.";
 static NSString *const kPresentMessage = @"Present RewardBased ad from vungle.";
@@ -34,13 +35,21 @@ static NSString *const UnitIDInterstitial = @"ca-app-pub-1812018162342166/734126
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     NSString *appVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     [self appendLog:[NSString stringWithFormat:@"App version: %@", appVersion]];
     [self appendLog:[NSString stringWithFormat:@"Reward based adapter: %@", [self versionOfAdapter:@"GADMAdapterVungleRewardBasedVideoAd"]]];
     [self appendLog:[NSString stringWithFormat:@"Interstitial adapter: %@", [self versionOfAdapter:@"GADMAdapterVungleInterstitial"]]];
     [self appendLog:[NSString stringWithFormat:@"AdMob SDK: %@", [GADRequest sdkVersion]]];
     [self appendLog:[NSString stringWithFormat:@"Vungle SDK: %@", VungleSDKVersion]];
+
     [GADRewardBasedVideoAd sharedInstance].delegate = self;
+
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{
+                                 kVungleOptionUserId: @"vungle_user",
+                                 kVungleOptionMuted: @NO
+                                 }];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,6 +74,14 @@ static NSString *const UnitIDInterstitial = @"ca-app-pub-1812018162342166/734126
     [self.logView scrollRangeToVisible:NSMakeRange(self.logView.text.length, 0)];
 }
 
+- (VungleAdNetworkExtras *)adNetworkExtras {
+    VungleAdNetworkExtras *extras = [[VungleAdNetworkExtras alloc] init];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    extras.userId = [defaults stringForKey:kVungleOptionUserId];
+    extras.muted = [defaults boolForKey:kVungleOptionMuted];
+    return extras;
+}
+
 #pragma mark RewardBasedVideoAd
 
 - (void)resetRequest {
@@ -77,10 +94,8 @@ static NSString *const UnitIDInterstitial = @"ca-app-pub-1812018162342166/734126
 		[[GADRewardBasedVideoAd sharedInstance] presentFromRootViewController:self];
 	} else {
 		[self resetRequest];
-		VungleAdNetworkExtras *extras = [[VungleAdNetworkExtras alloc] init];
-		extras.userId = @"vungle_user";
 		GADRequest *request = [GADRequest request];
-		[request registerAdNetworkExtras:extras];
+		[request registerAdNetworkExtras:[self adNetworkExtras]];
 		[[GADRewardBasedVideoAd sharedInstance] loadRequest:request
 											   withAdUnitID:UnitIDrewardBased];
         [self appendLog:@"Requesting reward based video ad..."];
@@ -109,10 +124,7 @@ static NSString *const UnitIDInterstitial = @"ca-app-pub-1812018162342166/734126
 
 - (void)rewardBasedVideoAd:(GADRewardBasedVideoAd *)rewardBasedVideoAd
    didRewardUserWithReward:(GADAdReward *)reward {
-	NSString *rewardMessage =
-	[NSString stringWithFormat:@"Reward received with currency %@ , amount %lf",
-	 reward.type,
-	 [reward.amount doubleValue]];
+	NSString *rewardMessage = [NSString stringWithFormat:@"Reward received with currency %@ , amount %@", reward.type, reward.amount];
 	[self appendLog:rewardMessage];
 }
 
@@ -141,6 +153,7 @@ static NSString *const UnitIDInterstitial = @"ca-app-pub-1812018162342166/734126
 		self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:UnitIDInterstitial];
 		self.interstitial.delegate = self;
 		GADRequest *request = [GADRequest request];
+		[request registerAdNetworkExtras:[self adNetworkExtras]];
 		//test ad from admob
 		//request.testDevices = @[kGADSimulatorID];
 		[self.interstitial loadRequest:request];
