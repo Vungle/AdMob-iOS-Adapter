@@ -16,4 +16,9 @@
  */
 @property (nonatomic, copy) NSString *userId;
 
+/*!
+ * @brief Controls whether presented ads will start in a muted state or not.
+ */
+@property (nonatomic, assign) BOOL muted;
+
 @end
