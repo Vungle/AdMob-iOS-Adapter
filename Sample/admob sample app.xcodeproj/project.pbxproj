@@ -22,6 +22,7 @@
 		843F3DE51B74ED4E007FF079 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843F3DE41B74ED4E007FF079 /* Images.xcassets */; };
 		843F3DE61B74ED8E007FF079 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843F3DDB1B74ED2A007FF079 /* LaunchScreen.xib */; };
 		843F3DE71B74ED94007FF079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843F3DE11B74ED42007FF079 /* Main.storyboard */; };
+		C32129371DC7C68E00E0E3E8 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32129361DC7C68E00E0E3E8 /* OptionsViewController.m */; };
 		C806F5B31A8C3D9E00CAE55B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C806F5B21A8C3D9E00CAE55B /* MobileCoreServices.framework */; };
 		C806F5B51A8C3DBB00CAE55B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C806F5B41A8C3DBB00CAE55B /* libz.dylib */; };
 		C80D05DD1A8AA04000930EF6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80D05DC1A8AA04000930EF6 /* AudioToolbox.framework */; };
@@ -58,6 +59,8 @@
 		843F3DE21B74ED42007FF079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		843F3DE41B74ED4E007FF079 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
 		C30091B01D9D8B4500FA08D2 /* VungleAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleAdNetworkExtras.h; sourceTree = "<group>"; };
+		C32129351DC7C68E00E0E3E8 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = SOURCE_ROOT; };
+		C32129361DC7C68E00E0E3E8 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = SOURCE_ROOT; };
 		C806F5B21A8C3D9E00CAE55B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		C806F5B41A8C3DBB00CAE55B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C80D057A1A896BB000930EF6 /* Publisher Test Ads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Publisher Test Ads.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +192,8 @@
 			children = (
 				843F3DD11B74ECF3007FF079 /* AppDelegate.h */,
 				843F3DD21B74ECF3007FF079 /* AppDelegate.m */,
+				C32129351DC7C68E00E0E3E8 /* OptionsViewController.h */,
+				C32129361DC7C68E00E0E3E8 /* OptionsViewController.m */,
 				843F3DD31B74ECF3007FF079 /* ViewController.h */,
 				843F3DD41B74ECF3007FF079 /* ViewController.m */,
 			);
@@ -290,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				843F3DD61B74ECF3007FF079 /* ViewController.m in Sources */,
+				C32129371DC7C68E00E0E3E8 /* OptionsViewController.m in Sources */,
 				843F3DDA1B74ED04007FF079 /* main.m in Sources */,
 				843F3DD51B74ECF3007FF079 /* AppDelegate.m in Sources */,
 			);
