@@ -29,12 +29,6 @@
 /* Begin PBXFileReference section */
 		842EB7381B7B595E007B3A6E /* libVungleAdapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVungleAdapter.a; sourceTree = "<group>"; };
 		842EB73B1B7B5976007B3A6E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		842EB73D1B7B5976007B3A6E /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
-		842EB73E1B7B5976007B3A6E /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
-		842EB73F1B7B5976007B3A6E /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMEnums.h; sourceTree = "<group>"; };
-		842EB7401B7B5976007B3A6E /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
-		842EB7411B7B5976007B3A6E /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
-		842EB7421B7B5976007B3A6E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		842EB7431B7B5976007B3A6E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		842EB74F1B7B5981007B3A6E /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
 		843F3DD11B74ECF3007FF079 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -84,24 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				842EB73B1B7B5976007B3A6E /* GoogleMobileAds.framework */,
-				842EB73C1B7B5976007B3A6E /* Mediation Adapters */,
 				842EB7431B7B5976007B3A6E /* README.txt */,
 			);
 			name = GoogleMobileAdsSdkiOS;
 			path = Libraries/GoogleMobileAdsSdkiOS;
-			sourceTree = "<group>";
-		};
-		842EB73C1B7B5976007B3A6E /* Mediation Adapters */ = {
-			isa = PBXGroup;
-			children = (
-				842EB73D1B7B5976007B3A6E /* GADMAdNetworkAdapterProtocol.h */,
-				842EB73E1B7B5976007B3A6E /* GADMAdNetworkConnectorProtocol.h */,
-				842EB73F1B7B5976007B3A6E /* GADMEnums.h */,
-				842EB7401B7B5976007B3A6E /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */,
-				842EB7411B7B5976007B3A6E /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */,
-				842EB7421B7B5976007B3A6E /* README.txt */,
-			);
-			path = "Mediation Adapters";
 			sourceTree = "<group>";
 		};
 		842EB7471B7B5981007B3A6E /* VungleSDK */ = {
